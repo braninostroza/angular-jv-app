@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
+import { initFlowbite } from 'flowbite';
 
 
 @Component({
@@ -12,4 +13,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 })
 export class AppComponent {
   title = 'angular-jv-app';
+
+  ngOnInit(): void {
+    initFlowbite();
+  }
 }
